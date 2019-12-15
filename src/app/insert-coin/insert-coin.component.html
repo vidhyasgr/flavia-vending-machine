@@ -1,0 +1,9 @@
+<p class="display -sm-width">
+  {{ vendingMachineService.currentBalance }}
+</p>
+
+<div *ngFor="let coin of allCoins">
+  <button class="button" (click)="insertCoin(coin)">
+    {{ coin.coinValue }}
+  </button>
+</div>
